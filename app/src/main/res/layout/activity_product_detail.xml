@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ProductDetailActivity">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ipad" />
+
+    <TextView
+        android:id="@+id/product_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="product name"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:lines="2"
+        android:textAlignment="center"
+        android:text="product descripitpn"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/price_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:text="$ 2,000.00"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_below="@id/price_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>
